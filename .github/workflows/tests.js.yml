@@ -45,3 +45,9 @@ jobs:
         gh_access_token: ${{ secrets.GITHUB_TOKEN }}
         report_path: logs
 
+    - name: Upload Report
+      uses: actions/upload-artifact@v4.3.3  
+      with:
+        name: test report
+        path: logs
+
